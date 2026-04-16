@@ -100,7 +100,7 @@ While pitch is included in the mapping logic, **pyttsx3 has limited pitch contro
 ### 1. Clone Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/AbrarAhmed435/empathy-engine.git
 cd empathy-engine
 ```
 ### 2. Create Virtual Environment
