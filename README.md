@@ -102,3 +102,41 @@ While pitch is included in the mapping logic, **pyttsx3 has limited pitch contro
 ```bash
 git clone <your-repo-link>
 cd empathy-engine
+```
+### 2. Create Virtual Environment
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### ▶️ Usage
+```
+python3 main.py
+```
+```
+Example: Enter you text: I am very happy today!
+```
+### 🔹 API Mode
+Run Server
+```
+uvicorn api:app --reload
+```
+Open
+```
+http://127.0.0.1:8000/docs
+```
+Test Request
+```
+{
+  "text": "I am very happy today!"
+}
+```
+### 📦 Output
+```
+Generates .wav audio files
+File name based on detected emotion
+```
