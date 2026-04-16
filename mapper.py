@@ -6,7 +6,7 @@ def map_emotion_to_voice(emotion: str, score: float):
 
     base_rate = 150
     base_volume = 0.8
-    base_pitch = 0  # Note: pyttsx3 has limited pitch control
+    base_pitch = 0  
 
     if emotion == "positive":
         rate = base_rate + int(score * 50)      # faster
@@ -18,7 +18,8 @@ def map_emotion_to_voice(emotion: str, score: float):
         volume = max(0.5, base_volume - 0.2)
         pitch = int(score * 30)
 
-    else:  # neutral
+    # neutral case
+    else:  
         rate = base_rate
         volume = base_volume
         pitch = base_pitch
