@@ -24,16 +24,4 @@ This project introduces an **emotion-aware modulation layer** that dynamically a
 The system follows a **modular, pipeline-based architecture**:
 
 ### 🔄 Pipeline Flow
-User Input (CLI/API)
-↓
-Emotion Detection (VADER)
-↓
-Emotion + Intensity Score
-↓
-Emotion-to-Voice Mapping
-↓
-Voice Parameters (rate, volume, pitch)
-↓
-Text-to-Speech Engine (pyttsx3)
-↓
-Audio Output (.wav file)
+User Input (CLI/API)-> Emotion Detection (VADER)-> Emotion + Intensity Score-> Emotion-to-Voice Mapping-> Voice Parameters (rate, volume, pitch)-> Text-to-Speech Engine (pyttsx3)->Audio Output (.wav file)
